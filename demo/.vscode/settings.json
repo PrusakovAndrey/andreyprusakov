@@ -1,0 +1,7 @@
+{ "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh", // your path here
+      "args": ["-l"]
+    }
+  },
+}
