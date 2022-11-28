@@ -1,4 +1,8 @@
 package com.example.lesson;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class homeWork {
@@ -6,6 +10,7 @@ public class homeWork {
         // task1();
         // task2();
         // task3();
+        // task4();
     }
 
     public static void task1() { // Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение
@@ -50,4 +55,25 @@ public class homeWork {
         }
         System.out.println(name + " = " + result);
     }
+
+    public static void task4() {/*
+                                 * +Задано уравнение вида q + w = e, q, w, e >= 0.
+                                 * Некоторые цифры могут быть заменены знаком вопроса, например 2? + ?5 = 69.
+                                 * Требуется восстановить выражение до верного равенства.
+                                 * Предложить хотя бы одно решение или сообщить, что его нет.
+                                 */
+        String input = "2? + ?5 = 69";
+        // char[] numbers = input.toCharArray();
+        ArrayList count = new ArrayList();
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) == '?') {
+                count.add(i);
+            }
+            
+        }
+        System.out.println(count.get(1));
+    }
+
+
+
 }

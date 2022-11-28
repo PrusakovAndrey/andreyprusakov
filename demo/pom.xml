@@ -26,6 +26,12 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+  <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10</version>
+  </dependency>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -73,3 +79,4 @@
     </pluginManagement>
   </build>
 </project>
+
