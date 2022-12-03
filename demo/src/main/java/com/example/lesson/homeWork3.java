@@ -13,7 +13,7 @@ public class homeWork3 {
         //task4();
     }
 
-    // Реализовать алгоритм сортировки слиянием.
+    //  Задание 1: Реализовать алгоритм сортировки слиянием. 
     public static void task1() {
         int[] array1 = { 8, 0, -3, 5, 6, 9, 8, -4, 2, -99, 43 };
         int[] result = mergesort(array1);
@@ -33,12 +33,10 @@ public class homeWork3 {
             return buffer1;
         }
         
-        // уже отсортирован.
         int middle = startIndex + (endIndex - startIndex) / 2;
         int[] sorted1 = mergesortInner(buffer1, buffer2, startIndex, middle);
         int[] sorted2 = mergesortInner(buffer1, buffer2, middle, endIndex);
         
-        // Слияние
         int index1 = startIndex;
         int index2 = middle;
         int destIndex = startIndex;
@@ -56,7 +54,7 @@ public class homeWork3 {
         return result;
     }
 
-    // Пусть дан произвольный список целых чисел. Удалить из него чётные числа.
+    // Задание 2: Пусть дан произвольный список целых чисел. Удалить из него чётные числа.
     public static void task2() {
         ArrayList<Integer> listInt = new ArrayList<>();
         listInt.add(1);
@@ -77,6 +75,7 @@ public class homeWork3 {
         System.out.println(listInt);
     }
 
+    // Задание 3:
     // Задан целочисленный список ArrayList.
     // Найти минимальное, максимальное и среднее арифметичское этого списка.
     public static void task3() {
